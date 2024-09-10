@@ -1,4 +1,7 @@
 # LuaObfuscatorOnline
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Web基础课程学生作业
 
 基于Python的针对罗技Lua的在线混淆网站
@@ -32,8 +35,8 @@ https://www.toolhelper.cn/SymmetricEncryption/XOR
 
 5.向更多Lua提供支持，而不是局限于GHUB的Lua
 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 使用方法:
 
 请确保是以压缩包的形式下载并且解压的源代码
@@ -50,4 +53,39 @@ PS：！！！推荐使用Visual Studio Code ！！！
 
 如果这对你有帮助，请给我一个星
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Web Fundamentals Course Student Assignments
+
+Python-based online obfuscation site for Logitech Lua
+
+TextArea source:https://www.w3schools.com/tags/tag_textarea.asp
+
+Other help:https://www.runoob.com/html/html-tutorial.html
+
+Python is used as a server:https://geek-docs.com/flask/flask-questions/396_flask_how_to_connect_backend_python_flask_with_frontend_html_css_javascript.html
+
+TestLua from my friend (Afool4U):https://github.com/essdf/Logi_purgatory_macro 
+
+The interface design is based on the following website:
+
+https://www.jyshare.com/compile/66/
+
+https://luatool.cn/
+
+https://www.sojson.com/encrypt.html
+
+https://www.toolhelper.cn/SymmetricEncryption/XOR
+
+Future Plans:
+1.Forward and reverse encryption and decryption are supported, rather than being limited to simple encryption
+
+2.Support more encryption methods（luaR、ssulua、DZSH）
+
+3.Implement local upload file encryption and decryption instead of copy and paste
+
+4.Make better graphics (CSS and JS when I learn about it)
+
+5.Provide support to more Lua than just Lua at GHUB
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
