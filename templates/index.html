@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- 声明类型-->
+<html lang="zh"> <!-- 设置语言为中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 设置字符编码 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视口 -->
+    <title>在线Lua混淆工具</title> <!-- 网页标题 -->
+    <style>
+        body {  /* 设置页面主体的样式 */
+            font-family: Arial; /* 设置字体为Arial */
+            margin: 20px; /* 设置页面外边距 */
+            padding: 20px; /* 设置页面内边距 */
+            border: 1px solid #ccc; /* 设置边框颜色 */
+            border-radius: 5px; /* 设置边角圆滑 */
+        }
+        
+        textarea {  /* 设置多行文本框的样式 */
+            width: 100%; /* 设置文本框的宽度 */
+            margin-top: 10px; /* 设置上边距 */
+            margin-bottom: 20px; /* 设置下边距 */
+            padding: 10px; /* 设置文本框内边距 */
+            border: 1px solid #ccc; /* 设置边框颜色 */
+            border-radius: 5px; /* 设置边角圆滑 */
+        }
+        
+        input[type="submit"] { /* 设置提交按钮的样式 */
+            background-color: #4CAF50; /* 设置背景色 */
+            color: white; /* 设置文字颜色 */
+            padding: 10px 20px; /* 设置上下内边距，左右内边距 */
+            border: none; /* 清除边框 */
+            border-radius: 5px; /* 设置边角圆滑 */
+            cursor: pointer; /* 指针类型 */
+        }
+        
+        input[type="submit"]:hover { /* 当鼠标悬停在提交按钮上时的样式 */
+            background-color: #45a049; /* 改变背景色为稍深的绿色 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Lua代码混淆工具</h1> <!-- 页面主标 -->
+    
+    <form action="/" method="post"> <!-- 定义一个表单，提交内容到根路径，使用POST方法 -->
+        <label for="LuaPaste">在此粘贴你的Lua源代码:</label> <!-- 标签，提示用户在下方输入Lua代码 -->
+        
+        <textarea id="LuaPaste" name="LuaPaste" rows="20" required>{{ request.form.get('LuaPaste', '') }}</textarea> <!-- 多行文本框，供用户输入Lua代码，必填项 -->
+        
+        <label for="LuaOutput">混淆后的Lua代码:</label> <!-- 标签，提示用户查看混淆后的代码 -->
+        
+        <textarea id="LuaOutput" name="LuaOutput" rows="20" readonly>{{ obfuscated_code }}</textarea> <!-- 只读多行文本框，展示混淆后的Lua代码 -->
+        
+        <input type="submit" value="混淆"> <!-- 提交按钮，用户点击后提交表单进行代码混淆 -->
+    </form>
+</body>
+</html>
